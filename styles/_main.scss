@@ -89,7 +89,7 @@
         margin: auto;
     }
     .left__img{
-        height: 250px;
+        height: 200px;
     }
 }
 
@@ -125,6 +125,9 @@
     }
 }
 @media screen and (max-width:768px) {
+    .about{
+        margin-top: 50px;
+    }
     .about__title{
         font-size: 25px;
     }
@@ -143,6 +146,9 @@
     }
 }
 @media screen and (max-width:320px) {
+    .about{
+        margin-top: 50px;
+    }
     .secrow{
         display: flex;
         flex-direction: column;
@@ -156,8 +162,60 @@
     .sec__prgh{
         text-align: center;
         font-size: 10px;
-        width: 100%;
+        width: 70%;
         margin: 2%;
     }
+    .sec__img__bowl{
+        height: 200px;
+    }
+}
 
+// SECOND PART OF THE ABOUT US
+.thirdrow{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    &__prgh{
+        font-size: 20px;
+        width: 50%;
+    }
+}
+.third{
+    display: flex;
+    justify-content: space-around;
+    &__img{
+        height: 400px;
+    }
+}
+@media screen and (max-width:768px) {
+    .thirdrow{
+        max-width: 768px;
+        width: 100%;
+    }
+    .thirdrow__prgh{
+        font-size: 15px;
+        width: 70%;
+    }
+    .third__img{
+        height: 210px;
+    }
+}
+@media screen and (max-width:320px) {
+    .thirdrow{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 320px;
+        width: 100%;
+    }
+    .thirdrow__prgh{
+        font-size: 10px;
+        text-align: center;
+        width: 70%;
+    }
+    .third__img{
+        height: 130px;
+    }
 }

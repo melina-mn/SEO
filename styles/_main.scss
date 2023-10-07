@@ -1,0 +1,41 @@
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 10px;
+    &__title{
+        font-size: 40px;
+    }
+    &__btn{
+        width: 100px;
+        height: 40px;
+        border-radius: 10px;
+        border: none; 
+        background-color: rgb(138, 198, 152);
+        &:hover{
+            background-color: rgb(94, 190, 131);
+        }  
+        }          
+    }
+.left{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    width:50%;
+    margin-top: 20px;
+    &__img{
+        height: 350px;
+    }
+}
+@media screen and (max-width:768px) {
+    .right__title{
+        font-size:
+    }
+
+
+}

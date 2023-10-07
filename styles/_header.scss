@@ -4,18 +4,21 @@
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    justify-content: space-around;
-    background-color: rgb(183, 140, 179);
+    justify-content: space-between;
+    background-color: rgba(140, 183, 155, 0.811);
 
     &__logo{
        font-size: 25px;
+       margin-left: 10px;
        &:hover{
-        text-shadow: 2px 2px 4px rgba(163, 73, 152, 0.601);
+        text-shadow: 2px 2px 4px rgba(73, 163, 110, 0.601);
+        
     }
     }
     &__nav{
         display: flex;
         flex-direction: row;
+        margin-right: 10px;
     }
     &__ul{
         display: flex;
@@ -27,7 +30,7 @@
         display: flex;
         margin-right: 21px;
         &:hover{
-            text-shadow: 2px 2px 4px rgba(163, 73, 152, 0.601);
+            text-shadow: 3px 3px 5px rgba(47, 97, 58, 0.5);
         }
     }
 }
@@ -36,10 +39,13 @@ a{
     color: black;
 }
 @media screen and (max-width:768px) {
+            // .container{
+            //     width: 100%;
+            // }
             .container__logo{
-                font-size: 22px;
+                font-size: 18px;
             }
             .container__li{
-                font-size: 20px;
+                font-size: 16px;
             }
 }

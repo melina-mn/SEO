@@ -1,3 +1,56 @@
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  margin: 10px;
+}
+.right__title {
+  font-size: 40px;
+}
+.right__btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(138, 198, 152);
+}
+.right__btn:hover {
+  background-color: rgb(94, 190, 131);
+}
+
+.left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  margin-top: 20px;
+}
+.left__img {
+  height: 350px;
+}
+
 .container {
   width: 100%;
   min-height: 23px;
@@ -11,15 +64,17 @@
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: rgb(183, 140, 179);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(140, 183, 155, 0.811);
 }
 .container__logo {
   font-size: 25px;
+  margin-left: 10px;
 }
 .container__logo:hover {
-  text-shadow: 2px 2px 4px rgba(163, 73, 152, 0.601);
+  text-shadow: 2px 2px 4px rgba(73, 163, 110, 0.601);
 }
 .container__nav {
   display: -webkit-box;
@@ -29,6 +84,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-right: 10px;
 }
 .container__ul {
   display: -webkit-box;
@@ -48,7 +104,7 @@
   margin-right: 21px;
 }
 .container__li:hover {
-  text-shadow: 2px 2px 4px rgba(163, 73, 152, 0.601);
+  text-shadow: 3px 3px 5px rgba(47, 97, 58, 0.5);
 }
 
 a {
@@ -58,14 +114,15 @@ a {
 
 @media screen and (max-width: 768px) {
   .container__logo {
-    font-size: 22px;
+    font-size: 18px;
   }
   .container__li {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 body {
   max-width: 1440px;
   width: 100%;
   min-height: 750px;
+  margin: auto;
 }

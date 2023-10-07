@@ -6,6 +6,8 @@
     align-items: baseline;
     justify-content: space-between;
     background-color: rgba(140, 183, 155, 0.811);
+    font-family: 'Exo', sans-serif;
+    position: sticky;
 
     &__logo{
        font-size: 25px;
@@ -18,7 +20,7 @@
     &__nav{
         display: flex;
         flex-direction: row;
-        margin-right: 10px;
+        gap: 10px;
     }
     &__ul{
         display: flex;
@@ -38,6 +40,18 @@ a{
     text-decoration: none;
     color: black;
 }
+.hamburger{
+    display: none;
+    cursor: pointer;
+    &__bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: rgba(36, 73, 36, 0.627);
+    }
+}
+
 @media screen and (max-width:768px) {
             .container{
                 max-width: 700px;
@@ -49,4 +63,20 @@ a{
             .container__li{
                 font-size: 16px;
             }
+}
+@media screen and (max-width:320px) {
+    .container{
+        max-width: 320px;
+        width: 100%;
+        &__logo{
+            font-size: 10px;
+        }  
+        &__li{
+            display: none;
+        } 
+    }
+    .hamburger{
+        display: block;
+        margin: auto;
+    }
 }

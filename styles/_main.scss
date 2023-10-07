@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+    font-family: 'Exo', sans-serif;
 }
 .right{
     display: flex;
@@ -13,6 +14,10 @@
     }
     &__prgh{
         font-size: 20px;
+        &__span{
+            color: rgb(64, 224, 64);
+            font-weight: 700;
+        }
     }
     &__btn{
         width: 100px;
@@ -54,4 +59,34 @@
     }
 }
 
+}
+@media screen and (max-width:320px) {
+    .row{
+        max-width: 320px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .right__title{
+        font-size: 18px;
+    }
+    .right__prgh{
+        font-size: 10px;
+        width: 100%;
+    }
+    .right__btn{
+        height: 30px;
+        width: 60px;
+        font-size: 8px;
+        margin: auto;
+    }
+    .left{
+        display: flex;
+        margin: auto;
+    }
+    .left__img{
+        height: 250px;
+    }
 }

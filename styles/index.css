@@ -7,6 +7,7 @@
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
+  font-family: "Exo", sans-serif;
 }
 
 .right {
@@ -25,6 +26,10 @@
 }
 .right__prgh {
   font-size: 20px;
+}
+.right__prgh__span {
+  color: rgb(64, 224, 64);
+  font-weight: 700;
 }
 .right__btn {
   width: 100px;
@@ -77,6 +82,45 @@
     height: 250px;
   }
 }
+@media screen and (max-width: 320px) {
+  .row {
+    max-width: 320px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .right__title {
+    font-size: 18px;
+  }
+  .right__prgh {
+    font-size: 10px;
+    width: 100%;
+  }
+  .right__btn {
+    height: 30px;
+    width: 60px;
+    font-size: 8px;
+    margin: auto;
+  }
+  .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+  }
+  .left__img {
+    height: 250px;
+  }
+}
 .container {
   width: 100%;
   min-height: 23px;
@@ -94,6 +138,8 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: rgba(140, 183, 155, 0.811);
+  font-family: "Exo", sans-serif;
+  position: sticky;
 }
 .container__logo {
   font-size: 25px;
@@ -110,7 +156,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-right: 10px;
+  gap: 10px;
 }
 .container__ul {
   display: -webkit-box;
@@ -138,6 +184,18 @@ a {
   color: black;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.hamburger__bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: rgba(36, 73, 36, 0.627);
+}
+
 @media screen and (max-width: 768px) {
   .container {
     max-width: 700px;
@@ -148,6 +206,22 @@ a {
   }
   .container__li {
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container {
+    max-width: 320px;
+    width: 100%;
+  }
+  .container__logo {
+    font-size: 10px;
+  }
+  .container__li {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    margin: auto;
   }
 }
 body {

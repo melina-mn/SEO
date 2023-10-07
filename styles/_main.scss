@@ -124,5 +124,40 @@
         height: 300px;
     }
 }
+@media screen and (max-width:768px) {
+    .about__title{
+        font-size: 25px;
+    }
+    .secrow{
+        max-width: 768px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .sec__prgh{
+        width: 50%;
+        font-size: 15px;
+    }
+    .sec__img__bowl{
+        height: 250px;
+    }
+}
+@media screen and (max-width:320px) {
+    .secrow{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about__title{
+        text-align: center;
+        font-size: 18px;
+    }
+    .sec__prgh{
+        text-align: center;
+        font-size: 10px;
+        width: 100%;
+        margin: 2%;
+    }
 
-
+}

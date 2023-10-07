@@ -20,13 +20,15 @@
         }
     }
     &__btn{
-        width: 100px;
+        width: 150px;
         height: 40px;
         border-radius: 10px;
         border: none; 
         background-color: rgb(138, 198, 152);
+        word-spacing: 5px;
         &:hover{
             background-color: rgb(94, 190, 131);
+            letter-spacing: 5px;
         }  
         }          
     }
@@ -90,3 +92,37 @@
         height: 250px;
     }
 }
+
+//THE ABOUT USS DESIGN
+
+.about{
+    font-family: 'Exo', sans-serif;
+    width: 100%;
+    margin: 10px;
+    
+    &__title{
+        font-size: 35px;
+    }
+}
+.secrow{
+    display: flex;
+    justify-content: space-between;
+}
+.sec__prgh{
+    width: 50%;
+    min-height: 300px;
+    font-size: 20px;
+    margin-right: 20px;
+    &__span{
+        color: rgb(64, 224, 64);
+        font-weight: 700;
+    }
+}
+.sec__img{
+    display: flex;
+    &__bowl{
+        height: 300px;
+    }
+}
+
+

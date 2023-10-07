@@ -32,14 +32,16 @@
   font-weight: 700;
 }
 .right__btn {
-  width: 100px;
+  width: 150px;
   height: 40px;
   border-radius: 10px;
   border: none;
   background-color: rgb(138, 198, 152);
+  word-spacing: 5px;
 }
 .right__btn:hover {
   background-color: rgb(94, 190, 131);
+  letter-spacing: 5px;
 }
 
 .left {
@@ -121,6 +123,44 @@
     height: 250px;
   }
 }
+.about {
+  font-family: "Exo", sans-serif;
+  width: 100%;
+  margin: 10px;
+}
+.about__title {
+  font-size: 35px;
+}
+
+.secrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sec__prgh {
+  width: 50%;
+  min-height: 300px;
+  font-size: 20px;
+  margin-right: 20px;
+}
+.sec__prgh__span {
+  color: rgb(64, 224, 64);
+  font-weight: 700;
+}
+
+.sec__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.sec__img__bowl {
+  height: 300px;
+}
+
 .container {
   width: 100%;
   min-height: 23px;
@@ -139,7 +179,6 @@
           justify-content: space-between;
   background-color: rgba(140, 183, 155, 0.811);
   font-family: "Exo", sans-serif;
-  position: sticky;
 }
 .container__logo {
   font-size: 25px;

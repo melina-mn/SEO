@@ -1,3 +1,9 @@
 @import 'main';
 @import 'header';
 @import 'footer';
+
+body{
+    max-width: 1440px;
+    width: 100%;
+    min-height: 750px;
+}

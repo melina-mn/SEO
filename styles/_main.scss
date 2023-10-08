@@ -127,19 +127,20 @@
 @media screen and (max-width:768px) {
     .about{
         margin-top: 50px;
+        max-width: 768px;
+        width: 100%;
     }
     .about__title{
         font-size: 25px;
     }
     .secrow{
-        max-width: 768px;
-        width: 100%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
     .sec__prgh{
-        width: 50%;
+        width: 35%;
         font-size: 15px;
+        margin-left: -30px;
     }
     .sec__img__bowl{
         height: 250px;
@@ -195,10 +196,13 @@
     }
     .thirdrow__prgh{
         font-size: 15px;
-        width: 70%;
+        width: 35%;
     }
     .third__img{
-        height: 210px;
+        height: 190px;
+    }
+    hr{
+        width: 100%;
     }
 }
 @media screen and (max-width:320px) {

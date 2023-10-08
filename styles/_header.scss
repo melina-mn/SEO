@@ -27,13 +27,14 @@
         font-size: 20px;
     }
     &__li{
-        display: flex;
+        display: inline-block;
         margin-right: 21px;
         &:hover{
             text-shadow: 3px 3px 5px rgba(47, 97, 58, 0.5);
         }
     }
 }
+
 
 a{
     text-decoration: none;

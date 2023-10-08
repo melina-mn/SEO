@@ -162,7 +162,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .about {
+  .about-us {
     margin-top: 50px;
     max-width: 768px;
     width: 100%;
@@ -357,18 +357,43 @@ a {
   color: black;
 }
 
-.hamburger {
-  display: none;
-  cursor: pointer;
+.ham {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: sticky;
+  top: 2rem;
+  left: 100%;
+  background-color: green;
+  -webkit-transform: 0.2s ease-out;
+          transform: 0.2s ease-out;
+  text-align: center;
 }
-.hamburger__bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  background-color: rgba(36, 73, 36, 0.627);
+.ham__sidebar {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  z-index: 100;
+  width: 240px;
+  height: 100%;
+  padding-right: 1rem;
+  background: greenyellow;
+  -webkit-transform: 0.2 s ease-out;
+          transform: 0.2 s ease-out;
 }
 
+@media screen and (max-width: 1440px) {
+  .doc {
+    display: none;
+    visibility: hidden;
+  }
+}
 @media screen and (max-width: 768px) {
   .container {
     max-width: 700px;
@@ -379,6 +404,10 @@ a {
   }
   .container__li {
     font-size: 16px;
+  }
+  .doc {
+    display: none;
+    visibility: hidden;
   }
 }
 @media screen and (max-width: 320px) {
@@ -392,9 +421,30 @@ a {
   .container__li {
     display: none;
   }
-  .hamburger {
+  .doc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    visibility: visible;
+  }
+  ul {
     display: block;
-    margin: auto;
+    -webkit-margin-before: 1em;
+            margin-block-start: 1em;
+    -webkit-margin-after: 1em;
+            margin-block-end: 1em;
+    -webkit-margin-start: 0px;
+            margin-inline-start: 0px;
+    -webkit-margin-end: 0px;
+            margin-inline-end: 0px;
+    -webkit-padding-start: 40px;
+            padding-inline-start: 40px;
+  }
+  li {
+    display: list-item;
   }
 }
 .form {

@@ -34,33 +34,55 @@
         }
     }
 }
+
 a{
     text-decoration: none;
     color: black;
 }
-.hamburger{
-    display: none;
-    cursor: pointer;
-    &__bar{
-        display: block;
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        background-color: rgba(36, 73, 36, 0.627);
+.ham{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 2rem;
+    left: 100%;
+    background-color: green;
+    transform: 0.2s ease-out;
+    text-align: center;
+    &__sidebar{
+        position: fixed;
+        top: 0;
+        left: 100%;
+        z-index: 100;
+        width: 240px;
+        height: 100%;
+        padding-right: 1rem;
+        background: greenyellow;
+        transform: 0.2 s ease-out;
     }
 }
 
+@media screen and (max-width:1440px) {
+    .doc{
+        display: none;
+        visibility: hidden;
+    }
+}
 @media screen and (max-width:768px) {
-            .container{
-                max-width: 700px;
-                width: 100%;
-            }
-            .container__logo{
-                font-size: 18px;
-            }
-            .container__li{
-                font-size: 16px;
-            }
+    .container{
+        max-width: 700px;
+        width: 100%;
+        }
+    .container__logo{
+        font-size: 18px;
+        }
+    .container__li{
+        font-size: 16px;
+        }
+        .doc{
+            display: none;
+            visibility: hidden;
+        }
 }
 @media screen and (max-width:320px) {
     .container{
@@ -72,9 +94,23 @@ a{
         &__li{
             display: none;
         } 
+        
     }
-    .hamburger{
-        display: block;
-        margin: auto;
+    .doc{
+        display: flex;
+        justify-content: flex-end;
+        visibility: visible;
+        }
+        ul {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
+        li{
+        display: list-item;
+
     }
 }
